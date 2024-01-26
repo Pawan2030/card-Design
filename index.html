@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second card</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 800px;
+            background: rgb(167, 161, 247);
+            background: linear-gradient(90deg, rgb(186, 184, 238) 0%, rgb(248, 184, 226) 41%, rgb(194, 228, 235) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 400px;
+            height: 650px;
+            background-color: white;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .card img{
+            width: 100%;
+            height: 40%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .textBox
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            text-align: center;
+
+        }
+
+        .amountBox{
+            width: 80%;
+            height: 10%;
+            background-color: rgb(230, 217, 169);
+            border-radius: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+
+
+        }
+
+        @media (max-width: 300px)
+        {
+            .amountBox{
+                image-rendering: auto;
+                flex-direction: column;
+            }
+        }
+           
+
+        #paymentButton{
+            width: 80%;
+            height: 10%;
+            background-color: rgb(134, 134, 239);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px;
+            
+
+        }
+
+        .card .cancal a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: larger;
+            color: green;
+        
+        }
+
+        .amountBox .leftBox
+        {
+           display: flex;
+           flex-direction: row;
+           width: 50%;
+           gap: 5px;
+           
+        }
+
+
+        .amountBox .leftBox .imgBox img{
+            width: 65%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .amountBox .rightBox a{
+           text-decoration: none;
+        }
+
+
+
+    </style>
+</head>
+
+
+<body>
+    
+   <div class="container">
+
+    <div class="card">
+        <img src="music.jpg" alt="">
+
+        <div class="textBox">
+            <h2>Order Summary</h2>
+
+            <p>
+             Hi my name is pawan mehta and 
+             i am 3rd yr computer science 
+             undergradute student ans i am
+             learning css and javascript
+             and i want to becaume a very
+             good software engineer i am doing 
+             great hardword hi good to all please 
+             love all aroud you and take care yourself   
+            </p>
+        </div>
+
+        <div class="amountBox">
+
+           <div class="leftBox">
+
+             <div class="imgBox">
+               <img src="music.jpg" alt="">
+             </div>
+
+             <div class="paraBox">
+                <p>Amount</p>
+                <p>$99.9/year</p>
+             </div>
+
+           </div>
+
+           <div class="rightBox">
+             <a href="#">Change</a>
+           </div>
+        </div>
+
+        <button id="paymentButton">
+         Proceed for Payment
+        </button>
+
+         <div class="cancal">
+            <a href="#">Cancal Order</a>
+         </div>
+
+    </div>
+
+
+   </div>
+
+
+</body>
+</html>
